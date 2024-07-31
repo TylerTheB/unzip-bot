@@ -225,19 +225,19 @@ Use **/merge** to start one
     ACTUAL_THUMB = "Your actual thumbnail"
 
     START_TEXT = """
-
+smh
     """
 
     HELP_TXT = """
-
+Here is the list for you because you cant remember shit
     """
 
     ABOUT_TXT = """
-
+Only here to serve my master Cayden
     """
 
     DONATE_TEXT = """
-
+.
     """
 
     VIP_INFO = """
@@ -717,24 +717,7 @@ Tasks can't be processed. Come back later
     NO_PULL = "Nothing to pull 😅"
 
     COMMANDS_LIST = """
-Here is the list of the commands you can use (only in private btw) :
-
-**{send any file or URL}** : Prompt the extract dialog
-**/start** : To know if I'm online
-**/help** : Gives a simple help
-**/about** : Know more about me
-**/donate** : Know how you can contribute to this bot
-**/clean** : Remove your files from my server. Also useful if a task failed
-**/mode** : Change your upload mode (either `doc` or `media`)
-**/stats** : Know all the current stats about me
-**/merge** : Merge splitted archives together
-**/done** : After you sent all the splitted archives, use this to merge them
-**/info** : Get full info about a [Message](https://docs.pyrogram.org/api/types/Message) (info returned by Pyrogram)
-**/addthumb** : Upload with a custom thumbnail
-**/delthumb** : Removes your thumbnail
-**/report** : Used by replying to a message, sends it to the bot owner (useful for bug report, or any question)
-**/vip** : __Not available yet__ Know more about the VIP subscription
-**/commands** : This message
+Here is the list of the commands you can use 
     """
 
     ADMINCMD = """
