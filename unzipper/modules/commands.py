@@ -86,7 +86,7 @@ async def start_bot(_, message: Message):
     try:
         await message.reply_text(
             text=Messages.START_TEXT.format(message.from_user.mention),
-            reply_markup=Buttons.START_BUTTON,
+
             disable_web_page_preview=True,
         )
     except FloodWait as f:
@@ -107,7 +107,7 @@ async def clean_my_files(_, message: Message):
 async def help_me(_, message: Message):
     try:
         await message.reply_text(
-            text=Messages.HELP_TXT, reply_markup=Buttons.ME_GOIN_HOME
+            text=Messages.HELP_TXT,
         )
     except FloodWait as f:
         await sleep(f.value)
@@ -119,7 +119,7 @@ async def about_me(_, message: Message):
     try:
         await message.reply_text(
             text=Messages.ABOUT_TXT,
-            reply_markup=Buttons.ME_GOIN_HOME,
+         
             disable_web_page_preview=True,
         )
     except FloodWait as f:
@@ -624,14 +624,7 @@ async def pull_updates(_, message: Message):
         await git_reply.edit(Messages.NO_PULL)
 
 
-@unzipperbot.on_message(filters.command("donate"))
-async def donate_help(_, message: Message):
-    await message.reply(Messages.DONATE_TEXT)
 
-
-@unzipperbot.on_message(filters.command("vip"))
-async def vip_help(_, message: Message):
-    await message.reply(Messages.VIP_INFO)
 
 
 @unzipperbot.on_message(
