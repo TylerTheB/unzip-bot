@@ -10,6 +10,8 @@ class Messages:
     ABOUT = "About 👀"
 
     STATS_BTN = "Stats 📊"
+    
+    DONATE = "Donate 💸"
 
     REFRESH = "Refresh ♻️"
 
