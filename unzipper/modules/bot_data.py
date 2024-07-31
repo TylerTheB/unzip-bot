@@ -69,8 +69,6 @@ Don't go AFK next time 😉
 
     BANNED = """
 **Sorry you're banned 💀**
-
-Report this at @EDM115_chat if you think this is a mistake, I may unban you
     """
 
     NEW_USER_BAD = """
@@ -100,7 +98,7 @@ This may take a while, go grab a coffee ☕️
 {}
 {}
 
-**Powered by @EDM115bots**
+
     """
 
     PROCESSING = "**Processing…**"
@@ -121,7 +119,7 @@ This may take a while, go grab a coffee ☕️
 
     LOG_CHECKED = "Log channel checked"
 
-    BOT_RUNNING = "Bot is running now ! Join @EDM115bots"
+    BOT_RUNNING = "Bot is running now !"
 
     WRONG_LOG = """
 Error : the provided **LOGS_CHANNEL** (`{}`) is incorrect
@@ -157,7 +155,7 @@ Select the extraction mode for that merged file 👀
     EXT_CAPTION = """
 `{}`
 
-Successfully extracted by @unzip_edm115bot 🥰
+
     """
 
     REPORT_TEXT = """
@@ -190,7 +188,6 @@ have been saved from the URL
 
 **⚠ IN ALL CASES ⚠**, please send **/clean**, else you can't send any other task 🙂🔫
 
-Please report this at @EDM115_chat if you think this is a serious error
     """
 
     HOW_MANY_UPLOADED = "`{}` file(s) have been extracted from that archive"
@@ -228,72 +225,19 @@ Use **/merge** to start one
     ACTUAL_THUMB = "Your actual thumbnail"
 
     START_TEXT = """
-Hi **{}** 👋, I'm **Unarchiver bot** 🥰
 
-I can extract any archive, with password or not, splitted, …
-Send **/commands** to learn more
-
-**Made with ❤️ by @EDM115bots**
-**/donate** if you can 🥺
     """
 
     HELP_TXT = """
-**• How to extract 🤔**
 
-    **1)** Send the file or link that you want to extract
-    **2)** Click on extract button (If you sent a link use `🔗` button. If it's a file just use `🗂️` button)
-
-
-**• How to change upload mode 🤔**
-    Send **/mode**
-
-
-**Note :**
-    **1.** If your archive is password protected select `🔐` button
-    **2.** Please don't send corrupted files ! If you sent one by mistake just send **/clean**
-    **3.** If your archive have +95 files in it then bot can't show all of extracted files to select from (yet). So in that case if you can't see your file in the buttons just click on `Upload all 📤` button. It will send all extracted files to you !
-
-
-**• Got an error ?**
-    Visit edm115.dev/unzip#help
-
-
-**• I wanna have help 🥺**
-
-    PM me at **@EDM115** or join the chat **@EDM115_chat**
     """
 
     ABOUT_TXT = """
-**About Unarchiver bot [v6.3.3]**
 
-• **Language :** [Python 3.12.1](https://www.python.org/)
-• **Framework :** [Pyrogram 2.0.106](https://pyrogram.org/)
-• **Source code :** [EDM115/unzip-bot](https://github.com/EDM115/unzip-bot)
-• **Developer :** [EDM115](https://github.com/EDM115)
-
-**[Rate me ⭐](https://t.me/BotsArchive/2705)**
-Made with ❤️ by **@EDM115bots**
     """
 
     DONATE_TEXT = """
-I'm going to be honest : **this bot costs me money**…
-Nothing's free on this world, however I try to keep this bot for free for as many people as possible
-I don't like to put restrictions, nor getting your PM's flooded with ads…
 
-So if you can, donate :)
-It helps out a ton, covers the costs (hosting, updating, … 👨‍💻)
-
---How ?--
-• **[Paypal](https://www.paypal.me/8EDM115)**
-• **[GitHub Sponsors](https://github.com/sponsors/EDM115)**
-• **[Directly in Telegram](https://t.me/EDM115bots/698)**
-• **[BuyMeACoffee](https://www.buymeacoffee.com/edm115)**
-• **[Send cryptos (not recommended)](https://walad.link/edm115)**
-
-Thanks for your contribution 😊
-
---Side note :--
-Donation doesn't count as a VIP subscription. Check **/vip** for more info
     """
 
     VIP_INFO = """
@@ -318,7 +262,7 @@ Here's how : Become a VIP user and benefit from extra perks !
 **How to become a VIP ?**
 1) Send **/pay** to the bot
 2) Choose your subscription
-3) Send a screenshot of your payment to **@EDM115**
+3) Send a screenshot of your payment 
 4) Enjoy your VIP perks !
 
 **What happens when my subscription ends ?**
@@ -456,7 +400,6 @@ Do you really want to delete your thumbnail ?
 
 `{}`
 
-Please report this at @EDM115_chat if you think this is a serious error
     """
 
     CANCELLED_TXT = "**{} ✅**"
@@ -510,7 +453,6 @@ That's not an archive 💀
 
     DEF_NOT_AN_ARCHIVE = """
 This file is NOT an archive 😐
-If you believe it's an error, send the file to **@EDM115**
     """
 
     PROCESSING2 = "`Processing… ⏳`"
@@ -538,7 +480,6 @@ Use the **/merge** command
     QUERY_PARSE_ERR = """
 Fatal query parsing error 💀
 
-Please contact @EDM115_chat with details and screenshots
     """
 
     GIVE_NEW_NAME = """
@@ -556,7 +497,6 @@ Please send the new file name (**--INCLUDE THE FILE EXTENTION !--**)
     UPLOADED = """
 **Successfully uploaded ✅**
 
-**Join @EDM115bots ❤️**
     """
 
     NO_FILE_LEFT = "There's no file left to upload"
@@ -670,12 +610,10 @@ It failed 😣 Retry
 If it fails again, it means that {} haven't started the bot yet (or deleted the chat), or he's private/banned/whatever
     """
 
-    REPORT_REPLY = "Reply to a message to report it to @EDM115"
+    REPORT_REPLY = "Reply to a message to report it "
 
     REPORT_DONE = """
 Report sucessfully sent ! An answer will arrive soon
-
-Note : if you need to reply to replies, always use that /report command (or join **@EDM115_chat**)
     """
 
     BAN_ID = "Give an user id to ban 😈"
@@ -815,7 +753,7 @@ Here's all the commands that only the owner (you) can use :
 **/maintenance** : Put the bot in or out of maintenance mode. No tasks can be processed while on
 **/cleanall** : Same as `/clean`, but for the whole server
 **/cleantasks** : Same as `/cleanall`, plus removes them from the database
-**/logs** : Send you the logs (all of them). Useful for bug tracking. Send them to **@EDM115** if you don't understand them/need help
+**/logs** : Send you the logs (all of them). Useful for bug tracking. 
 **/restart** : Does a basic restart, less intrusive as the `/redbutton` one
 **/dbexport** : ~~Exports the whole database as CSV~~ __Does nothing yet__
 **/eval {code}** : Evaluate a piece of code. Useful for debugging
