@@ -813,7 +813,7 @@ class Buttons:
                 InlineKeyboardButton(
                     Messages.REFRESH, callback_data="statscallback|refresh"
                 ),
-                InlineKeyboardButton(Messages.BACK, callback_data="megoinhome"),
+              
             ]
         ]
     )
@@ -957,13 +957,3 @@ class Buttons:
         ]
     )
 
-    RATE_ME = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton(
-                    Messages.RATE, url="https://t.me/BotsArchive/2705"
-                ),
-                InlineKeyboardButton(Messages.DONATE, callback_data="donatecallback"),
-            ],
-        ]
-    )
