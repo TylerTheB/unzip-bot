@@ -225,7 +225,7 @@ Use **/merge** to start one
     ACTUAL_THUMB = "Your actual thumbnail"
 
     START_TEXT = """
-smh
+
     """
 
     HELP_TXT = """
