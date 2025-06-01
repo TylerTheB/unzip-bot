@@ -20,9 +20,10 @@ unzipperbot = Client(
     max_concurrent_transmissions=3,
 )
 
+# Modified configuration with only file logging
 logging.basicConfig(
     level=logging.INFO,
-    handlers=[logging.FileHandler("unzip-log.txt"),
+    handlers=[logging.FileHandler("unzip-log.txt")],  # Removed StreamHandler
     format="%(asctime)s - %(levelname)s - %(name)s - %(threadName)s - %(message)s",
 )
 LOGGER = logging.getLogger(__name__)
