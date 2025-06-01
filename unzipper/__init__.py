@@ -22,7 +22,7 @@ unzipperbot = Client(
 
 logging.basicConfig(
     level=logging.INFO,
-    handlers=[logging.FileHandler("unzip-log.txt"), logging.StreamHandler()],
+    handlers=[logging.FileHandler("unzip-log.txt"),
     format="%(asctime)s - %(levelname)s - %(name)s - %(threadName)s - %(message)s",
 )
 LOGGER = logging.getLogger(__name__)
