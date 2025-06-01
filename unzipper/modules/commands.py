@@ -9,7 +9,11 @@ from asyncio import sleep, create_subprocess_shell, subprocess
 from contextlib import redirect_stdout, redirect_stderr
 from sys import executable
 
-import git
+try:
+    import git
+    GIT_AVAILABLE = True
+except ImportError:
+    GIT_AVAILABLE = False
 import psutil
 from pyrogram import enums, filters
 from pyrogram.errors import FloodWait, RPCError
@@ -613,7 +617,12 @@ async def restart(_, message: Message):
     filters.private & filters.command("gitpull") & filters.user(Config.BOT_OWNER)
 )
 async def pull_updates(_, message: Message):
+    if not GIT_AVAILABLE:
+        await message.reply("Git functionality is not available. Please install git on the server to use this command.")
+        return
+        
     git_reply = await message.reply(Messages.PULLING)
+    # Rest of the function remains the same...
     repo = git.Repo("/app")
     current = repo.head.commit
     repo.remotes.origin.pull()
